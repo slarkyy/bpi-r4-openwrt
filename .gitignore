@@ -3,8 +3,6 @@
 .*.swp
 /env
 /dl
-/.config
-/.config.old
 /.toolchain_build_ver
 /bin
 /build_dir
@@ -35,3 +33,17 @@ git-src
 .cproject
 .ccache
 .vscode*
+# Ignore build output and temporary directories
+/bin
+/build_dir
+/staging_dir
+/tmp
+/logs
+/dl
+
+# Ignore local configuration files and keys
+/feeds.conf
+/key-build*
+/keys/
+*.swp
+*~
