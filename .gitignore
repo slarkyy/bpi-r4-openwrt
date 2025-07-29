@@ -1,48 +1,19 @@
-*.o
-.DS_Store
-.*.swp
-/env
-/dl
-/.toolchain_build_ver
-/bin
-/build_dir
-/staging_dir
-/tmp
-/logs
-/feeds.conf
-/files
-/target/linux/feeds
-/overlay
-/package/feeds
-/package/openwrt-packages
-/*.patch
-/llvm-bpf*
-key-build*
-private-key.pem
-public-key.pem
-*.orig
-*.rej
-*~
-.#*
-*#
-.emacs.desktop*
-TAGS*~
-git-src
-.project
-.cproject
-.ccache
-.vscode*
 # Ignore build output and temporary directories
 /bin
 /build_dir
 /staging_dir
 /tmp
 /logs
+
+# Ignore downloaded source code for packages
 /dl
 
-# Ignore local configuration files and keys
+# Ignore the generated feeds directory.
+# The feeds.conf.default file is what should be tracked.
 /feeds.conf
+
+# Ignore local keys and editor swap files
 /key-build*
 /keys/
-*.swp
 *~
+*.swp
